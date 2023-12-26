@@ -1,0 +1,1 @@
+1° Em breve um script para reinicialização do roteador de forma rápida e remota, para fins de conhecimento pessoal
