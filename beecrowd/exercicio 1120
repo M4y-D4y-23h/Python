@@ -1,0 +1,16 @@
+count = 0
+while True:
+  caso, numeros = [str(x) for x in input().split()]
+  if caso == '0' and numeros == '0':
+    break
+  numeros = numeros.replace(caso,'')
+  for x in range(len(numeros)):
+    if numeros[x] != '0':
+      break
+    elif numeros[x] == '0':
+      count += 1
+  numeros = numeros.replace('0','',count)
+  if numeros == '':
+    print("0")
+  else:
+    print(numeros)
