@@ -1,0 +1,17 @@
+N = int(input())
+for x in range(N):
+  lista = []
+  A, B = [str(x) for x in input().split()]
+  if len(B) > len(A):
+    print("nao encaixa")
+    continue
+  else:
+    len_t = len(A)-len(B)
+    len_a = len(A)
+    for i in range(len_t, len_a):
+      lista.append(A[i])
+    lista = ''.join(lista)
+    if lista == B:
+      print("encaixa")
+    else:
+      print("nao encaixa")
