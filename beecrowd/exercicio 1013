@@ -1,0 +1,7 @@
+num1, num2, num3 = [int(x) for x in input().split()]
+lista = [0]*3
+lista[0] = num1
+lista[1] = num2
+lista[2] = num3
+lista.sort(key=int, reverse=True)
+print(lista[0], "eh o maior")
