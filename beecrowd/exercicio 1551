@@ -1,0 +1,18 @@
+import string
+lista_let = list(string.ascii_lowercase)
+N = int(input())
+for _ in range(N):
+  count_pala = []
+  frase = input()
+  for x in range(len(lista_let)):
+    if frase.count(lista_let[x]):
+      if lista_let[x] in count_pala:
+        continue
+      else:
+        count_pala.append(lista_let[x])
+  if len(count_pala) == 26:
+    print("frase completa")
+  elif len(count_pala) >= 13 and len(count_pala) < 26:
+    print("frase quase completa")
+  elif len(count_pala) > 0 and len(count_pala) <= 12:
+    print("frase mal elaborada")
