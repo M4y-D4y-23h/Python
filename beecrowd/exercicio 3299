@@ -1,0 +1,9 @@
+n = str(input())
+
+if ('13' in n):
+  print("13 es de Mala Suerte")
+else: 
+  print(n,"NO es de Mala suerte")
+
+n = int(n)
+print(type(n))
