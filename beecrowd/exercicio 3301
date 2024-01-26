@@ -1,0 +1,8 @@
+hug, zez, luis = [int(x) for x in input().split()]
+
+if (zez == 5):
+  print("zezinho")
+elif (zez == 6):
+  print("luisinho")
+elif (zez == 7):
+  print("huguinho")
