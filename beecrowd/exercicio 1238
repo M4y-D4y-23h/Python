@@ -1,0 +1,19 @@
+N = int(input())
+for x in range(N):
+  A, B = map(list, input().split())
+  str_comb = ""
+  str_M = ""
+  if len(A) > len(B):
+    len_M = len(B)
+    if len_M != 0:
+      for i in range(len_M, len(A)):
+        str_M = ''.join((str_M,A[i]))
+  else:
+    len_M = len(A)
+    if len_M != 0:
+      for i in range(len_M, len(B)):
+        str_M = ''.join((str_M,B[i]))
+  for i in range(len_M):
+    str_comb = ''.join((str_comb,A[i]+B[i]))
+  str_comb = ''.join((str_comb,str_M))
+  print(str_comb)
