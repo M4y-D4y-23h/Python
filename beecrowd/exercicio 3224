@@ -1,0 +1,8 @@
+input1 = str(input())
+input2 = str(input())
+if (len(input1) > len(input2)):
+  print("go")
+elif (len(input1) == len(input2)):
+  print("go")
+else:
+  print("no")
