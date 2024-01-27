@@ -1,8 +1,17 @@
 hug, zez, luis = [int(x) for x in input().split()]
-
-if (zez == 5):
-  print("zezinho")
-elif (zez == 6):
-  print("luisinho")
-elif (zez == 7):
-  print("huguinho")
+if zez > hug and zez < luis:
+    print("zezinho")
+if zez < hug and zez > luis:
+    print("zezinho")
+    
+if hug > zez and hug < luis:
+    print("huguinho")
+if hug < zez and hug > luis:
+    print("huguinho")
+    
+if luis > hug and luis < zez:
+    print("luisinho")
+if luis < hug and luis > zez:
+    print("luisinho")
+else:
+    print("@#$")
