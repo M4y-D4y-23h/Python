@@ -1,16 +1,16 @@
 casos = int(input())
-n = [""]*casos
 for x in range(0, casos):
+  n = []
   N = str(input())
-  if (N != 'P=NP'):
-    a = int(N[0])
-    if (len(N) > 1):
-      b = int(N[2])
-      resultado = a+b
+  if N == "P=NP":
+    print("skipped")
+    continue
+  for y in range(len(N)):
+    if N[y] == '+':
+      n.append(N[y].replace('+', ','))
     else:
-      resultado = a
-    n[x] = resultado
-  else:
-    n[x] = "skipped"
-for x in range(0, len(n)):
-  print(n[x])
+      n.append(str(N[y]))
+  n = ''.join(n)
+  n = n.split(',')
+  n = int(n[0]) + int(n[1])
+  print(n)
